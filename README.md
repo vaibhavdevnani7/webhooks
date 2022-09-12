@@ -3,4 +3,4 @@ Typescript based node.js server made with expressjs which consumes webhooks from
 Nginx is also used for handling concurrent requests using http caching. 
 Fully containerised to be used with docker.
 ![Alt text](docker.png "DOCKER LOGS")
-![Alt text](rediscommander.png "REDIS-COMMANDER")
+![Alt text](redis-commander.png "REDIS-COMMANDER")

@@ -1,0 +1,18 @@
+version: '4.12'
+services:
+  redis:
+    image: 'redislabs/redismod:latest'
+    ports:
+      - '6379:6379'
+  web:
+    restart: on-failure
+    build: ./web
+    ports:
+      - '81:3000'
+  
+  nginx:
+    build: ./nginx
+    ports:
+    - '80:80'
+    depends_on:
+    - web
